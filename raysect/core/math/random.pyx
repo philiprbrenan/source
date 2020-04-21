@@ -291,7 +291,7 @@ cpdef double normal(double mean, double stddev):
 
     global _normal_generate, _normal_c1, _normal_c2
 
-    # normals are generated with the BoxâMuller transform
+    # normals are generated with the BoxÃ¢ÂÂMuller transform
     # the transform generates two solutions per evaluation
     _normal_generate = not _normal_generate
 
