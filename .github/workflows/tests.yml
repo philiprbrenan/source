@@ -16,7 +16,7 @@ jobs:
 
     - name: Install software packages
       run: |
-        pip install numpy==$NUMPY_VERSION scipy matplotlib cython>=0.28
+        pip install numpy scipy matplotlib cython>=0.28
         dev/build.sh
     - name: Run tests
       run: |
