@@ -2,7 +2,9 @@
 name: Raysect - compile and test
 
 on:
-  push
+  push:
+    paths-ignore:
+    - ".github/control/prepareForPullRequest.txt"
 
 jobs:
   build:
