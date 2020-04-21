@@ -25,7 +25,7 @@ for my $folder(@ARGV)                                                           
     next;
    }
   my ($u, $r) = split m(/), $userRepo, 2;
-  GitHub::Crud::writeFolderUsingSavedToken  $u, $r, $folder, $folder, $token;    # Upload folder to repo using token
+  GitHub::Crud::writeFolderUsingSavedToken  $u, $r, $folder, $folder, $token;   # Upload folder to repo using token
   ++$folders
  }
 
