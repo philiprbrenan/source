@@ -1,0 +1,30 @@
+
+name: Raysect - compile and test
+
+on:
+  push:
+    paths-ignore:
+    - ".github/control/prepareForPullRequest.txt"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Install software packages
+      run: |
+        pip install numpy scipy matplotlib cython>=0.28
+
+    - name: Build Raysect
+      run: |
+        export PERL_MM_USE_DEFAULT=1
+        dev/build.sh
+
+    - name: Run tests
+      run: |
+        dev/test.sh
