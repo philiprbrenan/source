@@ -6,7 +6,7 @@ This script must be run from the root of a copy of the refractiveindex.info data
 
 Only a subset of the database is exported, as required for Raysect.
 
-* RefractiveIndex.INFO website: © 2008-2016 Mikhail Polyanskiy
+* RefractiveIndex.INFO website: Â© 2008-2016 Mikhail Polyanskiy
 * refractiveindex.info database: public domain via CC0 1.0
 * NO GUARANTEE OF ACCURACY - Use on your own risk
 """
