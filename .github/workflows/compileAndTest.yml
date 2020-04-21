@@ -20,6 +20,7 @@ jobs:
       run: |
         export PERL_MM_USE_DEFAULT=1
         sudo cpan install Data::Table::Text GitHub::Crud Data::Dump 1>/dev/null
+        sudo apt install -q tree
         pip install numpy scipy matplotlib cython>=0.28
         
     - name: Build Raysect
